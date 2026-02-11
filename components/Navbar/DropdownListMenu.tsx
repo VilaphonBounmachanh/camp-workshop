@@ -11,10 +11,13 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "../ui/button";
 import UserIcon from "./UserIcon";
-import { link } from "fs";
 import Link from "next/link";
 
-const links = [
+type NavLinks = {
+  href: string;
+  label: string;
+};
+const links: NavLinks[] = [
   { href: "/", label: "Home" },
   { href: "/favorite", label: "Favorite" },
   { href: "/camp", label: "camp" },
