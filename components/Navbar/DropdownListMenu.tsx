@@ -12,16 +12,7 @@ import {
 import { Button } from "../ui/button";
 import UserIcon from "./UserIcon";
 import Link from "next/link";
-
-type NavLinks = {
-  href: string;
-  label: string;
-};
-const links: NavLinks[] = [
-  { href: "/", label: "Home" },
-  { href: "/favorite", label: "Favorite" },
-  { href: "/camp", label: "camp" },
-];
+import { links } from "@/utils/links";
 
 const DropdownListMenu = () => {
   return (
