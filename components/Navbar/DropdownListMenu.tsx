@@ -13,6 +13,7 @@ import { Button } from "../ui/button";
 import UserIcon from "./UserIcon";
 import Link from "next/link";
 import { links } from "@/utils/links";
+import SignOutLinks from "./SignOutLinks";
 
 const DropdownListMenu = () => {
   return (
@@ -35,6 +36,7 @@ const DropdownListMenu = () => {
             );
           })}
         </DropdownMenuGroup>
+        <SignOutLinks />
       </DropdownMenuContent>
     </DropdownMenu>
   );
